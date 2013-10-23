@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
 }
-ul{
+ul {
     list-style:none;
 }
 /*fonts*/
@@ -20,39 +20,51 @@ ul{
     font-weight:bold;
     src:url('/fonts/HelveticaNeue-Bold.otf');
 }
-body{
+body {
     font-family:'Helvetica';
+    overflow:hidden;
+}
+#main-container {
+    /*for menu animation purposes*/
+    float:left;
 }
 /*header*/
  header {
+    position:fixed;
+    top:0;
+    left:519px;
     width:640px;
     height:80px;
     background: url('/images/header.png');
 }
-header #menu-button{
+header #menu-button {
     display:block;
     width:76px;
     float:left;
     margin: 10px 0 0 10px;
 }
 /*offers*/
-#offers-container{
+#scroll-container{
+    margin-top:80px;
+    overflow:hidden;
+}
+ #offers-container {
     background-color:#E9E9E9;
     width:640px;
     padding-top:10px;
-    height:100%;
+    padding-bottom:10px;
 }
-#offers-container #hot-offers{
+#offers-container #hot-offers {
     width:612px;
     height:364px;
     background: url('/images/hot-offers.png');
     margin: 0 auto;
     padding:10px;
     box-sizing:border-box;
-    box-shadow: 0px 2px 4px rgba(100,100,100,0.3);
+    box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.3);
     border-radius:10px;
 }
-#offers-container h3{
+#offers-container h3 {
     font-weight:normal;
     font-size:16px;
     color:#666666;
@@ -61,14 +73,14 @@ header #menu-button{
     width:513px;
     float:left;
 }
-#offers-container .page-selection{
+#offers-container .page-selection {
     float:left;
     width:72px;
     height:12px;
     display:block;
     margin-top:10px;
 }
-#offers-container .page-selection li{
+#offers-container .page-selection li {
     width:12px;
     margin-left:6px;
     height:12px;
@@ -76,7 +88,7 @@ header #menu-button{
     float:left;
     display:block;
 }
-#offers-container li .promotion-percentage{
+#offers-container li .promotion-percentage {
     background: url(/images/promotion-percentage.png);
     width: 82px;
     height:36px;
@@ -87,28 +99,27 @@ header #menu-button{
     font-weight:bold;
     float:left;
 }
-#offers-container .page-selection .selected{
+#offers-container .page-selection .selected {
     background: url(/images/selected-page.png);
 }
-#offers-container .gray-heading{
+#offers-container .gray-heading {
     color:#AAAAAA;
 }
-#offers-container #offers-list li{
+#offers-container #offers-list li {
     display:block;
     width:280px;
     float:left;
 }
-#offers-container #offers-list li:nth-child(1){
+#offers-container #offers-list li:nth-child(1) {
     margin-right:32px;
 }
-
-#offers-container #offers-list li p{
+#offers-container #offers-list li p {
     display:block;
     width:278px;
     font-weight:bold;
     font-size:22px;
 }
-#offers-container li .promotion-percentage{
+#offers-container li .promotion-percentage {
     margin-top:15px;
     background: url(/images/promotion-percentage.png);
     width: 82px;
@@ -120,7 +131,7 @@ header #menu-button{
     font-weight:bold;
     float:left;
 }
-#offers-container li .price-tag{
+#offers-container li .price-tag {
     margin-top:15px;
     color:#eb1a24;
     font-size:25px;
@@ -130,7 +141,7 @@ header #menu-button{
     padding: 3px 0 0 7px;
     font-weight:bold;
 }
-#offers-container li .currency{
+#offers-container li .currency {
     margin-top:15px;
     width:20px;
     display:block;
@@ -138,7 +149,7 @@ header #menu-button{
     font-size:20px;
     padding: 7px 0 0 13px;
 }
-#offers-container #new-in-store{
+#offers-container #new-in-store {
     width:612px;
     height:184px;
     border-radius:10px;
@@ -149,18 +160,18 @@ header #menu-button{
     box-sizing:border-box;
     border: 1px solid #CDCDCD;
 }
-#offers-container #new-in-store #product-images li{
+#offers-container #new-in-store #product-images li {
     width:135px;
     height:120px;
     border:1px solid #DDD;
     float:left;
     margin-left:10px;
 }
-#offers-container #new-in-store #product-images li img{
+#offers-container #new-in-store #product-images li img {
     display:block;
     margin: 0 auto;
 }
-#offers-container #already-user{
+#offers-container #already-user {
     width:612px;
     height:88px;
     border-radius:10px;
@@ -172,20 +183,31 @@ header #menu-button{
     box-sizing:border-box;
     margin-bottom:10px;
 }
-#offers-container #already-user h3{
+#offers-container #already-user h3 {
     font-size:14px;
 }
-#offers-container #already-user p{
+#offers-container #already-user p {
     display:block;
     clear:left;
     font-size:22px;
 }
-#offers-container #already-user img{
+#offers-container #already-user img {
     display:block;
     float:right;
     margin:20px 15px 0 0;
 }
-/*navigation*/
- nav {
-    display:none;
+/*main navigation*/
+ #app-menu {
+    width:519px;
+    background: url("/images/navigation-pattern.png");
+    float:left;
+}
+#app-menu #sections-tab-menu {
+    height:88px;
+}
+#app-menu #sections-tab-menu li {
+    float:left;
+    display:block;
+    box-sizing:border-box;
+    width:173px;
 }
