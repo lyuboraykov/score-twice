@@ -27,12 +27,14 @@ body {
 #main-container {
     /*for menu animation purposes*/
     float:left;
+    position:absolute;
+    left:0;
 }
 /*header*/
  header {
     position:fixed;
     top:0;
-    left:519px;
+    left:0;
     width:640px;
     height:88px;
     background: url('/images/header.png');
@@ -202,6 +204,8 @@ header #menu-button {
     width:519px;
     background: url("/images/navigation-pattern.png");
     float:left;
+    position:absolute;
+    left:-519px;
 }
 #app-menu #sections-tab-menu {
     height:88px;
@@ -287,4 +291,24 @@ header #menu-button {
     padding-top:3px;
     padding-right:3px;
     margin-right:15px;
+}
+#app-menu #account-info{
+    font-style:italic;
+    padding:20px 0 20px 30px;
+    color:white;
+    font-size:20px;
+}
+#app-menu .login-button{
+    width:224px;
+    height:70px;
+    background:url("/images/login-button.fw.png") no-repeat;
+    color:white;
+    font-size:28px;
+    float:left;
+    display:block;
+    margin:0 0 20px 20px;
+    text-align:center;
+    padding-top:15px;
+    box-sizing:border-box;
+    text-decoration:none;
 }

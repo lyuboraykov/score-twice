@@ -11,6 +11,8 @@ $(document).ready(function () {
     //menu selection
     $("#app-menu #sections-tab-menu li").click(selectMenuTab);
     $("#app-menu #main-menu li").click(selectMenuItem);
+
+    $("#menu-button").click(moveMenu);
 });
 
 var selectMenuTab = function (e) {
@@ -28,15 +30,22 @@ var selectMenuTab = function (e) {
         }
     }
 }
-
+//TODO: DRY with selectMenuTab
 var selectMenuItem = function (e) {
     var self = e.target;
     $(self).css("background", "black");
-    
+
     var items = $("#app-menu #main-menu li");
     for (var i = 0, length = items.length; i < length; i++) {
         if ($(items[i]).attr('id') !== $(self).attr('id')) {
+
             $(items[i]).css("background", "none");
         }
     }
+}
+
+var moveMenu = function () {
+        $("#app-menu, #main-container, header").animate({
+            left: ($("#app-menu").css("left") === "-519px")?"+=519":"-=519"
+        }, 300);
 }
