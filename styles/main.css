@@ -241,3 +241,50 @@ header #menu-button {
     box-sizing:border-box;
     background: url("/images/search-field.fw.png");
 }
+#app-menu #main-menu{
+    margin-top:10px;
+    height:504px;
+}
+#app-menu #main-menu li{
+    height:84px;
+    font-size:34px;
+    color:white;
+    box-sizing:border-box;
+    border-top:1px solid #333;
+    border-bottom:1px solid black;
+    padding-top:15px;
+    
+}
+#app-menu #main-menu li .menu-icon{
+    vertical-align:middle;
+}
+#app-menu #main-menu li .icon-container{
+    width:70px;
+    height:60px;
+    float:left;
+    vertical-align:middle;
+    padding-left:20px;
+}
+#app-menu #main-menu li span{
+    vertical-align:middle;
+    display:block;
+    vertical-align:middle;
+    float:left;
+    padding-top:10px;
+    margin-left:20px;
+}
+
+#app-menu #main-menu li:nth-child(1){
+    background:black;
+}
+#app-menu #main-menu li #payments-notifications{
+    float:right;
+    background:url("/images/notifications.fw.png");
+    width:70px;
+    height:50px;
+    text-align:center;
+    box-sizing:border-box;
+    padding-top:3px;
+    padding-right:3px;
+    margin-right:15px;
+}
