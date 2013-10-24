@@ -23,14 +23,19 @@ ul {
 body {
     font-family:'Helvetica';
     overflow:hidden;
+    background:black;
+    /*on iphone >5 the app has black stripes on top and bottom*/
 }
 /*the content container*/
-#main-container {
+ #main-container {
     /*for menu animation purposes*/
     float:left;
     position:absolute;
     left:0;
+    background:#E9E9E9;
 }
-
-
-
+#scroll-container {
+    margin-top:88px;
+    overflow:hidden;
+    width:640px;
+}

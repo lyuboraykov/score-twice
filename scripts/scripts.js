@@ -13,7 +13,20 @@ $(document).ready(function () {
     $("#app-menu #main-menu li").click(selectMenuItem);
 
     $("#menu-button").click(moveMenu);
+
+    $("#menu-search-field").keypress(search);
+    
+    $("#beginning-menu-item").click(goToBeginning);
 });
+
+var search = function (e) {
+    console.log(e.which === 13);
+    if (e.which === 13 && $("#menu-search-field").val().toLowerCase() === "fitness") { //only the view for fitness is available
+        moveMenu();
+        setTimeout(function(){$("#main-container, #header").addClass("animated pulse");},300);
+        setTimeout(function(){window.location.href = "/fitness.html";},800);
+    }
+}
 
 var selectMenuTab = function (e) {
     var self = e.target;
@@ -33,19 +46,29 @@ var selectMenuTab = function (e) {
 //TODO: DRY with selectMenuTab
 var selectMenuItem = function (e) {
     var self = e.target;
+    if($(self).children().length < 2){
+        self = $(self).parent("li");
+    }
     $(self).css("background", "black");
 
     var items = $("#app-menu #main-menu li");
     for (var i = 0, length = items.length; i < length; i++) {
         if ($(items[i]).attr('id') !== $(self).attr('id')) {
-
             $(items[i]).css("background", "none");
         }
     }
 }
 
 var moveMenu = function () {
-        $("#app-menu, #main-container, header").animate({
-            left: ($("#app-menu").css("left") === "-519px")?"+=519":"-=519"
-        }, 300);
+    $("#app-menu, #main-container").animate({
+        left: ($("#app-menu").css("left") === "-519px") ? "+=519" : "-=519"
+    }, 300);
+}
+
+var goToBeginning = function(){
+    if(window.location.href.toString().search("index.html") === -1){
+        moveMenu();
+        setTimeout(function(){$("#main-container, #header").addClass("animated pulse");},300);
+        setTimeout(function(){window.location.href = "/index.html";},800);
+    }
 }
