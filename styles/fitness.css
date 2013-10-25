@@ -1,0 +1,128 @@
+h3{
+    font-size:18px;
+    color:#666;
+    height:46px;
+    padding-top:15px;
+    box-sizing:border-box;
+    font-style:none;
+    font-weight:100;
+}
+#search-tabs{
+    height:88px;
+    width:640px;
+}
+#search-tabs li{
+    float:left;
+    width:213px;
+    box-sizing:border-box;
+    height:88px;
+    border:1px solid #BFBFBF;
+    border-left:none;
+    background: url("/images/non-selected-fitness-tab.fw.png");
+    font-size:20px;
+    color:#888;
+    text-align:center;
+    text-shadow:0 0 1px rgba(100,100,100,0.4);
+}
+
+#search-tabs li .tab-number{
+    background: url("/images/non-selected-fitness-tab-number.fw.png") no-repeat center;
+    margin:0 auto;
+    padding:10px;
+    text-align:center;
+    font-size:26px;
+    margin-top:5px;
+}
+
+#search-tabs li:nth-child(1){
+    background: url("/images/selected-fitness-tab.fw.png");
+    color:white;
+}
+#search-tabs li:nth-child(1) .tab-number{
+    color:#888;
+}
+#search-results li{
+    height:185px;
+    box-sizing:border-box;
+    padding:10px;
+    background:white;
+    border-bottom:1px solid #DDD;
+}
+#search-results li h2{
+    width:438px;
+    padding:5px;
+    padding-bottom:0;
+    box-sizing:border-box;
+    font-size:28px;
+    display:block;
+    float:left;
+}
+#search-results li img{
+    float:left;
+    margin:10px;
+    display:block;
+}
+#search-results li .search-result-arrow{
+    float:right;
+    margin-top:-35px;
+}
+
+#search-results li .organisation-name{
+    padding-left:5px;
+    color:#999;
+    display:block;
+    margin-left:153px;
+    margin-top:80px;
+}
+#search-results li .promotion-percentage{
+    background:url("/images/promotion-percentage.png");
+    background-size:100% auto;
+    width:70px;
+    height:28px;
+    float:left;
+    font-size:20px;
+    color:white;
+    padding: 5px 0 0 10px;
+    margin-top:10px;
+}
+#search-results li .money-off{
+    font-size:25px;
+    color:#CCC;
+    text-decoration:line-through;
+    float:left;
+    width:90px;
+    margin-left:10px;
+    padding-top:12px;
+}
+#search-results li ul{
+    width:110px;
+    height:20px;
+    margin-left:150px;
+    clear:left;
+    padding-top:5px;
+}
+#search-results li ul li{
+    width:20px;
+    height:20px;
+    float:left;
+    border:none;
+    margin-left:2px;
+}
+#search-results li ul .star{
+    background: url("/images/star.fw.png");
+}
+
+#search-results li ul .no-star{
+    background: url("/images/no-star.fw.png");
+}
+#search-results li .price{
+    float:right;
+    font-size:20px;
+    margin-top:-40px;
+    margin-right:10px;
+}
+#search-results li .price .red{
+    color:red;
+    font-size:25px;
+    padding:5px;
+}

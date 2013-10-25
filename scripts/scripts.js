@@ -1,7 +1,8 @@
 "use strict";
 $(document).ready(function () {
     //scrolling
-    $("#scroll-container").height($(window).height() - 80);
+    $(window).resize(resizeWindow);
+    resizeWindow();
     $("#scroll-container").niceScroll({
         touchbehavior: true
     });
@@ -71,4 +72,8 @@ var goToBeginning = function(){
         setTimeout(function(){$("#main-container, #header").addClass("animated pulse");},300);
         setTimeout(function(){window.location.href = "/index.html";},800);
     }
+}
+
+var resizeWindow = function(){
+    $("#scroll-container").height($(window).height() - 80); //needed for scrolling, comment on testing
 }

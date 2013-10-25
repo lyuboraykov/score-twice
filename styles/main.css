@@ -20,9 +20,12 @@ ul {
     font-weight:bold;
     src:url('/fonts/HelveticaNeue-Bold.otf');
 }
+html, body {
+    overflow:hidden;
+    height:100%;
+}
 body {
     font-family:'Helvetica';
-    overflow:hidden;
     background:black;
     /*on iphone >5 the app has black stripes on top and bottom*/
 }
@@ -32,10 +35,14 @@ body {
     float:left;
     position:absolute;
     left:0;
+    height:100%;
     background:#E9E9E9;
 }
 #scroll-container {
     margin-top:88px;
-    overflow:hidden;
     width:640px;
+}
+.scrollable {
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
 }

@@ -3,6 +3,7 @@
     
     <head>
         <meta name="viewport" content="width=device-width user-scalable=false initial-scale=0.5" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta content="text/html" charset="utf8">
         <title>Scoretwice</title>
         <meta description="HTML5 copy of the iphone app Scoretwice" />
@@ -27,7 +28,7 @@
                 </li>
             </ul>
             <input id="menu-search-field" type=text placeholder="Търси Продукти, Услуги, Търговци" />
-            <ul id="main-menu">
+            <ul id="main-menu" class="scrollable">
                 <li id="beginning-menu-item">
                     <div class="icon-container">
                         <img src="/images/beginning-menu-list.fw.png" alt="Beginning Icon" title="Beginning" width="55" height="53" class="menu-icon" />
@@ -84,7 +85,7 @@
                     <img src="images/logo.png" alt="Scoretwice Logo" title="Scoretwice" width="76" height="58" />
                 </a>
             </header>
-            <div id=scroll-container>
+            <div id="scroll-container" class="scrollable">
                 <div id="offers-container">
                     <section id="hot-offers">
                         <h3>ГОРЕЩИ
