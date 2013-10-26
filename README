@@ -1,2 +1,3 @@
 This is an HTML5 copy of the iphone app Scoretwice. It is created using Brackets, so all links are absolute due 
-to the virtual server Brackets offers.
+to the virtual server Brackets offers. It is supposed to be used on ios5 and above. To enable fullscreen 
+support add to homescreen.

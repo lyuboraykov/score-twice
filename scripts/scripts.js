@@ -3,12 +3,9 @@ $(document).ready(function () {
     //scrolling
     $(window).resize(resizeWindow);
     resizeWindow();
-    $("#scroll-container").niceScroll({
-        touchbehavior: true
-    });
-    $("#main-menu").niceScroll({
-        touchbehavior: true
-    });
+    $(document).bind("mobileinit", function () {
+        $.mobile.touchOverflowEnabled = true;
+    });//jquery mobile touch handling
     //menu selection
     $("#app-menu #sections-tab-menu li").click(selectMenuTab);
     $("#app-menu #main-menu li").click(selectMenuItem);
@@ -32,10 +29,10 @@ $(document).ready(function () {
     $("#back-button").click(function () {
         navigate("products.html", false);
     });
-    $("#food-back-button").click(function(){
+    $("#food-back-button").click(function () {
         navigate("food.html", false);
     });
-    $("#transparent-shirt").click(function(){
+    $("#transparent-shirt").click(function () {
         navigate("shirt.html", false);
     });
 });
