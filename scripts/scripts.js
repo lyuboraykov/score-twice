@@ -32,6 +32,12 @@ $(document).ready(function () {
     $("#back-button").click(function () {
         navigate("products.html", false);
     });
+    $("#food-back-button").click(function(){
+        navigate("food.html", false);
+    });
+    $("#transparent-shirt").click(function(){
+        navigate("shirt.html", false);
+    });
 });
 
 var search = function (e) {

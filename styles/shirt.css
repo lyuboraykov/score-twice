@@ -1,0 +1,217 @@
+header {
+    position:absolute;
+    left:0;
+    width:640px;
+    height:88px;
+    background: url('/images/products-header.fw.png');
+}
+header h1 {
+    font-size:40px;
+    font-style:normal;
+    font-weight:100;
+    color:white;
+    padding-top:20px;
+    width:370px;
+    display:block;
+    float:left;
+    margin-left:35px;
+}
+header #food-back-button {
+    background: url("/images/back-button.fw.png");
+    width:129px;
+    height:58px;
+    display:block;
+    text-decoration:none;
+    font-size:24px;
+    color:white;
+    box-sizing:border-box;
+    padding-top:15px;
+    padding-left:30px;
+    margin-top:15px;
+    float:left;
+    margin-left:10px;
+}
+header #info-button {
+    float:right;
+    margin-top:15px;
+    margin-right:10px;
+}
+#product-details {
+    background:white;
+    height:397px;
+    box-shadow:0 4px 20px rgba(100, 100, 100, 0.4);
+}
+#product-details h2 {
+    font-size:34px;
+    padding-left:10px;
+    padding-top:15px;
+}
+#product-details img[title*="Shirt"] {
+    float:left;
+    margin:10px;
+    margin-right:20px;
+}
+#product-details img[title*="Rating"] {
+    margin-top:20px;
+}
+#product-details #product-list-details {
+    display:block;
+    margin-left:10px;
+    float:left;
+    width:320px;
+}
+#product-details #product-list-details li {
+    padding:17px;
+}
+#product-details #product-list-details li:nth-child(2) {
+    border-top: 1px dashed #bbb;
+    border-bottom: 1px dashed #bbb;
+}
+#product-details #product-list-details li .detail {
+    font-size:14px;
+    color:#999;
+}
+#product-details #product-list-details li .value {
+    float:right;
+    font-size:20px;
+}
+#product-details #price-and-order {
+    border: 1px solid #ccc;
+    border-radius:10px;
+    width:612px;
+    height:95px;
+    margin:0 auto;
+    clear:left;
+    padding:15px;
+    box-sizing:border-box;
+}
+#product-details #price-and-order #until-now {
+    color:#999;
+    font-size:16px;
+    float:left;
+    width:500px;
+}
+#product-details #price-and-order #price {
+    color:#EB1924;
+    font-size:30px;
+    display:block;
+    width: 110px;
+    float:left;
+    height:48px;
+    padding-top:10px;
+}
+#product-details #price-and-order #currency {
+    font-size:15px;
+    color:#333;
+    float:left;
+    padding-top:24px;
+}
+#product-details #price-and-order #order-button {
+    width:236px;
+    height:68px;
+    float:right;
+    background: url("/images/order-button.fw.png");
+    margin-top:-20px;
+    color:white;
+    box-sizing:border-box;
+    font-size:30px;
+    padding-left:100px;
+    padding-top:15px;
+}
+#product-details #price-and-order #order-count {
+    float:right;
+    width:76px;
+    height:68px;
+    margin-top:-20px;
+    border-radius:10px;
+    background:#eee;
+    box-shadow:inset 0 2px 10px rgba(100, 100, 100, 0.4);
+    margin-right:10px;
+    font-size:36px;
+    text-align:center;
+    padding-top:13px;
+    box-sizing:border-box;
+}
+#product-details #price-and-order #count-word {
+    float:right;
+    color:#999;
+    padding-top:22px;
+    margin-right:4px;
+}
+#additional-options {
+    padding:10px;
+}
+#additional-options li {
+    border-bottom:1px solid #ddd;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#additional-options li h3 {
+    font-size:26px;
+    padding-left:5px;
+    margin-bottom:10px;
+}
+#additional-options li .dropdown-option {
+    width:610px;
+    height:62px;
+    margin:0 auto;
+    background:url("/images/dropdown-order.fw.png");
+    font-size:28px;
+    color:#666;
+    box-sizing:border-box;
+    padding-left:15px;
+    padding-top:15px;
+}
+#additional-options li .dropdown-option img {
+    float:right;
+    margin-top:-16px;
+}
+#additional-options li #price-per-km {
+    float:right;
+    color:#666;
+    font-size:25px;
+    margin-top:-37px;
+}
+#additional-options li input {
+    width:287px;
+    height:65px;
+    border-radius:10px;
+    background:white;
+    border:1px solid #aaa;
+    font-size:28px;
+    padding-left:10px;
+    box-shadow:inset 0 2px 10px rgba(100, 100, 100, 0.4);
+}
+#additional-options li img[title*="X"] {
+    margin:0 10px 0 10px;
+}
+#additional-options li #reg-price-per-km {
+    width:287px;
+    height:65px;
+    border:1px solid #ccc;
+    padding:20px 75px 20px 75px;
+    border-radius:10px;
+    color:#666;
+    font-size:25px;
+}
+#additional-options li #white {
+    float:right;
+    width:40px;
+    height:40px;
+    box-shadow:inset 0 2px 10px rgba(100, 100, 100, 0.4);
+    background:white;
+    border-radius:10px;
+    margin-right:10px;
+    margin-top:-4px;
+}
+#additional-options li textarea {
+    box-shadow:inset 0 2px 10px rgba(100, 100, 100, 0.4);
+    background:white;
+    border-radius:10px;
+    resize:none;
+    width:610px;
+    height:122px;
+    display:block;
+    margin:0 auto;
+    border:1px solid #aaa;
+}
