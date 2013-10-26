@@ -13,21 +13,37 @@ $(document).ready(function () {
     $("#app-menu #sections-tab-menu li").click(selectMenuTab);
     $("#app-menu #main-menu li").click(selectMenuItem);
 
-    $("#menu-button").click(moveMenu);
+    //navigation with animations
+    $("a").click(function (e) {
+        e.preventDefault();
+    });
 
+    $("#menu-button").click(moveMenu);
     $("#menu-search-field").keypress(search);
-    
-    $("#beginning-menu-item").click(function(){navigate("index.html");});
-    
-    $("#products-menu-item").click(function(){navigate("products.html");});
+    $("#beginning-menu-item").click(function () {
+        navigate("index.html", true);
+    });
+    $("#products-menu-item").click(function () {
+        navigate("products.html", true);
+    });
+    $("#food-category").click(function () {
+        navigate("food.html", false);
+    });
+    $("#back-button").click(function () {
+        navigate("products.html", false);
+    });
 });
 
 var search = function (e) {
     console.log(e.which === 13);
     if (e.which === 13 && $("#menu-search-field").val().toLowerCase() === "fitness") { //only the view for fitness is available
         moveMenu();
-        setTimeout(function(){$("#main-container, #header").addClass("animated pulse");},300);
-        setTimeout(function(){window.location.href = "/fitness.html";},800);
+        setTimeout(function () {
+            $("#main-container, #header").addClass("animated pulse");
+        }, 300);
+        setTimeout(function () {
+            window.location.href = "/fitness.html";
+        }, 800);
     }
 }
 
@@ -49,7 +65,7 @@ var selectMenuTab = function (e) {
 //TODO: DRY with selectMenuTab
 var selectMenuItem = function (e) {
     var self = e.target;
-    if($(self).children().length < 2){
+    if ($(self).children().length < 2) {
         self = $(self).parent("li");
     }
     $(self).css("background", "black");
@@ -68,14 +84,19 @@ var moveMenu = function () {
     }, 300);
 }
 
-var navigate = function(page){
-    if(window.location.href.toString().search(page) === -1){
-        moveMenu();
-        setTimeout(function(){$("#main-container").addClass("animated pulse");},300);
-        setTimeout(function(){window.location.href = "/" + page;},800);
+var navigate = function (page, toMove) {
+    if (window.location.href.toString().search(page) === -1) {
+        var timeout = 300;
+        (toMove) ? moveMenu() : timeout -= 300;
+        setTimeout(function () {
+            $("#main-container").addClass("animated pulse");
+        }, timeout);
+        setTimeout(function () {
+            window.location.href = "/" + page;
+        }, 800);
     }
 }
 
-var resizeWindow = function(){
+var resizeWindow = function () {
     $("#scroll-container").height($(window).height() - 80); //needed for scrolling, comment on testing
 }

@@ -1,0 +1,55 @@
+header {
+    position:absolute;
+    left:0;
+    width:640px;
+    height:88px;
+    background: url('/images/products-header.fw.png');
+}
+header h1 {
+    font-size:40px;
+    font-style:normal;
+    font-weight:100;
+    color:white;
+    padding-top:20px;
+    width:120px;
+    display:block;
+    float:left;
+    margin-left:60px;
+}
+header #back-button {
+    background: url("/images/back-button.fw.png");
+    width:159px;
+    height:58px;
+    display:block;
+    text-decoration:none;
+    font-size:24px;
+    color:white;
+    box-sizing:border-box;
+    padding-top:15px;
+    padding-left:30px;
+    margin-top:15px;
+    float:left;
+    margin-left:10px;
+}
+header #info-button{
+    float:right;
+    margin-top:15px;
+    margin-right:10px;
+}
+#search{
+    height:88px;
+    background: url("/images/search-background.fw.png");
+    box-sizing:border-box;
+    padding-top:15px;
+}
+#search input{
+    width:522px;
+    height:53px;
+    display:block;
+    background: url("/images/search-field-background.fw.png");
+    border-radius:30px;
+    border:none;
+    float:left;
+    margin-left:20px;
+    margin-right:15px;
+}

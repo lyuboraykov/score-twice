@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width user-scalable=false initial-scale=0.5 max-scale=0.5" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta content="text/html" charset="utf8">
+        <title>Scoretwice</title>
+        <meta description="HTML5 copy of the iphone app Scoretwice" />
+        <link rel="stylesheet" href="styles/main.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="styles/navigation.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="styles/fitness.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="styles/food.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="styles/animate.min.css" type="text/css" charset="utf-8" />
+    </head>
+    
+    <body>
+        <nav id="app-menu">
+            <ul id="sections-tab-menu">
+                <li id="main-menu-tab">
+                    <img src="/images/main-menu-tab.png" alt="Main Menu" Title="Menu Tab" width="47" height="42" />
+                </li>
+                <li id="credit-card-menu-tab">
+                    <img src="/images/credit-card-menu-tab.fw.png" alt="Credit Card" Title="Credit Card" width="58" height="43" />
+                </li>
+                <li id="shopping-cart-menu-tab">
+                    <img src="/images/shopping-cart-menu-tab.fw.png" alt="Shopping Cart" Title="Shopping Cart" width="64" height="47" />
+                </li>
+            </ul>
+            <input id="menu-search-field" type=text placeholder="Търси Продукти, Услуги, Търговци" />
+            <ul id="main-menu">
+                <li id="beginning-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/beginning-menu-list.fw.png" alt="Beginning Icon" title="Beginning" width="55" height="53" class="menu-icon" />
+                    </div>
+                    <span>Начало</span>
+                    <a href="/index.html"></a> <!--For SEO -->
+                </li>
+                <li id="hot-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/hot-menu-list.fw.png" alt="Hot Icon" title="Hot" width="54" height="67" class="menu-icon" />
+                    </div>
+                    <span>Горещо</span>
+                </li>
+                <li id="products-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/products-menu-list.fw.png" alt="Products Icon" title="Products" width="49" height="49" class="menu-icon" />
+                    </div>
+                    <span>Продукти</span>
+                    <a href="/products.html"></a> <!--For SEO -->
+                </li>
+                <li id="services-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/services-menu-list.fw.png" alt="Services Icon" title="Services" width="69" height="58" class="menu-icon" />
+                    </div>
+                    <span>Услуги</span>
+                </li>
+                <li id="merchants-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/merchants-menu-list.fw.png" alt="Merchants Icon" title="Merchants" width="45" height="47" class="menu-icon" />
+                    </div>
+                    <span>Търговци</span>
+                </li>
+                <!--12 notification on merchants -->
+                <li id="payments-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/payments-menu-list.fw.png" alt="Payments Icon" title="Payments" width="47" height="44" class="menu-icon" />
+                    </div>
+                    <span>Плащания</span>
+                    <div id="payments-notifications">12</div>
+                </li>
+                <li id="archive-menu-item">
+                    <div class="icon-container">
+                        <img src="/images/archive-menu-list.fw.png" alt="Archive Icon" title="Archive" width="37" height="44" class="menu-icon" />
+                    </div>
+                    <span>Архив</span>
+                </li>
+            </ul>
+            <p id="account-info">
+                <strong>Scoretwice</strong>ще ви бъде много по-полезен ако се регистрирате или влезете с акаунта си</p>
+            <a class="login-button">Регистрация</a>
+            <a class="login-button">Вход</a>
+        </nav>
+        <div id="main-container">
+            <header>
+                <a href="/products.html" id="back-button">Продукти</a>
+                <h1>Храна</h1>
+                <img src="/images/info-button.fw.png" alt="Info" title="Info" width="78" height="60" id="info-button"/>
+            </header>
+            <div id="scroll-container">
+                <section id="search">
+                    <input type="text" />
+                    <img src="/images/dropdown-button.fw.png" alt="Dropdown" title="Dropdown" width="60" height="60" />
+                </section>
+                <ul id="search-results">
+                    <li>
+                        <img src="/images/one-month-freecurve.fw.png" alt="One Month Fitness" Title="Fitness" width="132" height="102" />
+                        <h2>Едномесечно членство - FitCurve Fitness</h2>
+                        <img class="search-result-arrow" src="/images/arrow.png" alt="Search Arrow" title="Arrow"/>
+                        <span class="organisation-name">FITCURVE FITNESS</span>
+                        <div class="promotion-percentage">-80%</div>
+                        <span class="money-off">125.45лв</span>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="no-star"></li>
+                        </ul>
+                        <div class="price"><span class="red">69.30</span>лв</div>
+                    </li>
+                    <li>
+                        <img src="/images/one-day-holiday.png" alt="Three Months Flais" Title="Flais" width="133" height="102" />
+                        <h2>Еднодневна екскурзия до Керамоти на 28 Юли</h2>
+                        <img class="search-result-arrow" src="/images/arrow.png" alt="Search Arrow" title="Arrow"/>
+                        <span class="organisation-name">HAPPY BAR AND GRILL</span>
+                        <div class="promotion-percentage">-78%</div>
+                        <span class="money-off">246лв</span>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="no-star"></li>
+                        </ul>
+                        <div class="price"><span class="red">43.00</span>лв</div>
+                    </li>
+                    <li>
+                        <img src="/images/moved-shirt.png" alt="One Month Sauna" Title="Sauna" width="133" height="102" />
+                        <h2>Раздвижено бяло сако със 7/8 ръкав</h2>
+                        <img class="search-result-arrow" src="/images/arrow.png" alt="Search Arrow" title="Arrow"/>
+                        <span class="organisation-name">HAPPY BAR AND GRILL</span>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="no-star"></li>
+                            <li class="no-star"></li>
+                        </ul>
+                        <div class="price"><span class="red">23.45</span>лв</div>
+                    </li>
+                    <li>
+                        <img src="/images/transparent-shirt.png" alt="Massages and Spa" Title="Spa" width="133" height="102" />
+                        <h2>Прозрачна риза с шлиц в ръкавите</h2>
+                        <img class="search-result-arrow" src="/images/arrow.png" alt="Search Arrow" title="Arrow"/>
+                        <span class="organisation-name">HAPPY BAR AND GRILL</span>
+                        <ul>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="star"></li>
+                            <li class="no-star"></li>
+                            <li class="no-star"></li>
+                        </ul>
+                        <div class="price"><span class="red">143.00</span>лв</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script src="/scripts/jquery-2.0.3.min.js"></script>
+        <script src="/scripts/jquery.nicescroll.js"></script>
+        <script src="/scripts/scripts.js"></script>
+    </body>
+
+</html>
