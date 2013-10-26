@@ -1,3 +1,6 @@
+#app-menu #main-menu li:nth-child(1){ /*beginning menu item*/
+    background:black;
+}
 /*offers*/
  #offers-container {
     background-color:#E9E9E9;
